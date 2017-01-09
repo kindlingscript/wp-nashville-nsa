@@ -1,0 +1,15 @@
+# Ignore all files starting with .
+.*
+
+# Track this file .gitignore (do NOT ignore it)
+!.gitignore
+
+# Ignore all files that start with ~
+~*
+
+# Ignore node_modules
+node_modules/
+
+# OS or Editor folders
+.DS_Store
+Thumbs.db
