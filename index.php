@@ -5,6 +5,6 @@
 get_header();
 ?>
 
-<h1>Welcome to the Nashville NSA!</h1>
+<h1>Welcome to the Nashville NSA blog!</h1>
 
 <?php get_footer(); ?>

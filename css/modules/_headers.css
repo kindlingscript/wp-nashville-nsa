@@ -1,0 +1,5 @@
+.header {
+  &__large-title {
+    color: $mainBlue;
+  }
+}
