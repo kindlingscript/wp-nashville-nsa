@@ -1,0 +1,20 @@
+.primary-nav {
+  height: 6.25rem;
+  background-color: $mainBlue;
+
+  &--content-push {
+    padding-top: 1.9rem;
+  }
+}
+
+.left-header {
+  display: inline-block;
+
+  a {
+    font-size: 1.7rem;
+  }
+}
+
+.right-header {
+  float: right;
+}

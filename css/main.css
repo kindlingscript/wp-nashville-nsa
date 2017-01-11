@@ -7,4 +7,6 @@ Version: 1.0
 
 @import "base/_global";
 @import "base/_variables";
+@import "modules/_wrapper.css";
+@import "modules/_navbar.css";
 @import "modules/_headers.css";

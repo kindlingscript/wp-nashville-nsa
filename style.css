@@ -5,8 +5,43 @@ Author URI: http://kindlingscript.com
 Version: 1.0
 */
 
-h1 {
-  color: red;
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.wrapper {
+  padding-left: 18px;
+  padding-right: 18px;
+  max-width: 1236px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+.primary-nav {
+  height: 6.25rem;
+  background-color: #0197F5;
+}
+
+.primary-nav--content-push {
+  padding-top: 1.9rem;
+}
+
+.left-header {
+  display: inline-block;
+}
+
+.left-header a {
+  font-size: 1.7rem;
+}
+
+.right-header {
+  float: right;
 }
 
 .header__large-title {
