@@ -25,15 +25,13 @@ a {
 
 .primary-nav {
   height: 6.25rem;
-  background-color: #0197F5;
-}
-
-.primary-nav--content-push {
-  padding-top: 1.9rem;
+  background-color: #ffffff;
+  border-bottom: 1px solid #0197F5;
 }
 
 .left-header {
   display: inline-block;
+  padding-top: 2rem;
 }
 
 .left-header a {
@@ -42,8 +40,31 @@ a {
 
 .right-header {
   float: right;
+  padding-top: 1.8rem;
+}
+
+.right-header .btn {
+  background-color: #0197F5;
+  border: none;
+  color: #ffffff;
+  padding: 0.6rem;
+}
+
+.header__site-title,
+  .header__large-title {
+  color: #0197F5;
 }
 
 .header__large-title {
-  color: #0197F5;
+  margin: 0;
+  color: #ffffff;
+  font-size: 1.3rem;
+}
+
+.hero {
+  background-image: url('../nashvilleNSA/img/nashville.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1000px;
+  max-width: 1600px;
 }

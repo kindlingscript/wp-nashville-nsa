@@ -1,14 +1,12 @@
 .primary-nav {
   height: 6.25rem;
-  background-color: $mainBlue;
-
-  &--content-push {
-    padding-top: 1.9rem;
-  }
+  background-color: $white;
+  border-bottom: 1px solid $mainBlue;
 }
 
 .left-header {
   display: inline-block;
+  padding-top: 2rem;
 
   a {
     font-size: 1.7rem;
@@ -17,4 +15,12 @@
 
 .right-header {
   float: right;
+  padding-top: 1.8rem;
+
+  .btn {
+    background-color: $mainBlue;
+    border: none;
+    color: $white;
+    padding: 0.6rem;
+  }
 }

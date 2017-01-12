@@ -8,15 +8,15 @@
 </head>
 <body>
   <header>
-    <nav class="primary-nav primary-nav--content-push">
+    <nav class="primary-nav">
       <div class="wrapper">
         <div class="left-header">
-          <a href=<?php echo esc_url( home_url() ); ?>>
+          <a href=<?php echo esc_url( home_url() ); ?> class="header__site-title">
             <?php echo get_bloginfo( 'name' ); ?>
           </a>
         </div>
         <div class="right-header">
-          <button>Want to contribute?</button>
+          <button class="btn">Want to contribute?</button>
         </div>
       </div>
     </nav>
