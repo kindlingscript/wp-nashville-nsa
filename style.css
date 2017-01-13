@@ -43,13 +43,6 @@ a {
   padding-top: 1.8rem;
 }
 
-.right-header .btn {
-  background-color: #0197F5;
-  border: none;
-  color: #ffffff;
-  padding: 0.6rem;
-}
-
 .header__site-title,
   .header__large-title {
   color: #0197F5;
@@ -61,6 +54,17 @@ a {
   font-size: 1.3rem;
 }
 
+.header--intro {
+  position: absolute;
+  top: 12rem;
+  background: rgba(95,159,203,0.8);
+  margin: 0 1.8rem;
+  padding: 1rem 2rem;
+  line-height: 1.8rem;
+  font-weight: 400;
+  text-align: center;
+}
+
 /* Remember mobile-first! */
 
 .hero {
@@ -69,4 +73,18 @@ a {
   background-size: cover;
   background-position: 20%;
   height: 600px;
+}
+
+.btn {
+  background-color: #0197F5;
+  border: none;
+  color: #ffffff;
+  padding: 0.6rem;
+}
+
+.btn--find-out-more {
+  position: absolute;
+  top: 26rem;
+  margin-left: 8.5rem;
+  background-color: #57CD79;
 }

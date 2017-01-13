@@ -1,0 +1,13 @@
+.btn {
+  background-color: $mainBlue;
+  border: none;
+  color: $white;
+  padding: 0.6rem;
+
+  &--find-out-more {
+    position: absolute;
+    top: 26rem;
+    margin-left: 8.5rem;
+    background-color: #57CD79;
+  }
+}

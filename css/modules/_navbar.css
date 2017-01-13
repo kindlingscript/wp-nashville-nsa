@@ -16,11 +16,4 @@
 .right-header {
   float: right;
   padding-top: 1.8rem;
-
-  .btn {
-    background-color: $mainBlue;
-    border: none;
-    color: $white;
-    padding: 0.6rem;
-  }
 }

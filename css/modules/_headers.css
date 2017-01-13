@@ -9,6 +9,17 @@
     color: $white;
     font-size: 1.3rem;
   }
+
+  &--intro {
+    position: absolute;
+    top: 12rem;
+    background: rgba(95,159,203,0.8);
+    margin: 0 1.8rem;
+    padding: 1rem 2rem;
+    line-height: 1.8rem;
+    font-weight: 400;
+    text-align: center;
+  }
 }
 
 /* Remember mobile-first! */
