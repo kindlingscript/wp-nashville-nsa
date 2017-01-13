@@ -1,0 +1,5 @@
+.font {
+  &__content {
+    line-height: 25px;
+  }
+}

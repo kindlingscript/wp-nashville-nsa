@@ -20,6 +20,13 @@
     font-weight: 400;
     text-align: center;
   }
+
+  &--blue {
+    color: $mainBlue;
+    font-weight: 300;
+    border-bottom: 1px solid $mainBlue;
+    display: inline-block;
+  }
 }
 
 /* Remember mobile-first! */
