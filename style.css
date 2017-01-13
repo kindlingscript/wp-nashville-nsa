@@ -61,10 +61,12 @@ a {
   font-size: 1.3rem;
 }
 
+/* Remember mobile-first! */
+
 .hero {
   background-image: url('../nashvilleNSA/img/nashville.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 1000px;
-  max-width: 1600px;
+  background-position: 20%;
+  height: 600px;
 }
