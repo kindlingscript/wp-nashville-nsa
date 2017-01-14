@@ -1,9 +1,17 @@
 .section {
-  margin: 2rem 1.5rem;
+  margin: 2rem auto;
+  clear: both;
 
   &__screen-width {
     @mixin mediumScreen {
       width: 650px;
+    }
+  }
+
+  &__location--content {
+
+    @mixin mediumScreen{
+      padding-left: 5rem;
     }
   }
 
@@ -12,6 +20,24 @@
     margin: 0;
     padding: 2rem 1.5rem;
     background-color: $mainBlue;
+    text-align: center;
+
+    ul {
+      padding: 0;
+    }
+
+    li {
+      display: inline-block;
+      list-style: none;
+      line-height: 2rem;
+      font-weight: 100;
+
+      a:hover {
+        border-bottom: 1px solid $white;
+        color: #d0f0ff;
+        padding-bottom: 0.2rem;
+      }
+    }
   }
 }
 

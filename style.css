@@ -18,6 +18,14 @@ a {
   line-height: 25px;
 }
 
+.font__white-bg {
+  background-color: #ffffff;
+  color: #0197F5;
+  margin: 0 2rem;
+  padding: 0.5rem;
+  font-weight: 400;
+}
+
 .wrapper {
   padding-left: 18px;
   padding-right: 18px;
@@ -101,7 +109,8 @@ a {
 }
 
 .section {
-  margin: 2rem 1.5rem;
+  margin: 2rem auto;
+  clear: both;
 }
 
 @media (min-width: 800px) {
@@ -111,11 +120,36 @@ a {
   }
 }
 
+@media (min-width: 800px) {
+
+  .section__location--content {
+    padding-left: 5rem;
+  }
+}
+
 .section__footer {
   color: #ffffff;
   margin: 0;
   padding: 2rem 1.5rem;
   background-color: #0197F5;
+  text-align: center;
+}
+
+.section__footer ul {
+  padding: 0;
+}
+
+.section__footer li {
+  display: inline-block;
+  list-style: none;
+  line-height: 2rem;
+  font-weight: 100;
+}
+
+.section__footer li a:hover {
+  border-bottom: 1px solid #ffffff;
+  color: #d0f0ff;
+  padding-bottom: 0.2rem;
 }
 
 #wpgmza_map {

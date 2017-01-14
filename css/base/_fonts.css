@@ -2,4 +2,12 @@
   &__content {
     line-height: 25px;
   }
+
+  &__white-bg {
+    background-color: $white;
+    color: $mainBlue;
+    margin: 0 2rem;
+    padding: 0.5rem;
+    font-weight: 400;
+  }
 }
