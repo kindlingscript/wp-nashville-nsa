@@ -1,6 +1,8 @@
 .font {
   &__content {
     line-height: 25px;
+    padding-right: 38rem;
+    text-align: justify;
   }
 
   &__white-bg {

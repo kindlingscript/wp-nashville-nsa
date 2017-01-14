@@ -5,8 +5,10 @@ get_header();
 ?>
 
 <section class="hero">
-  <h1 class="header__large-title header--intro">We're the Nashville chapter of the National Stuttering Association, meeting once a month to support each other and talk about stuttering.</h1>
-  <button class="btn btn--find-out-more">Find out more</button>
+  <div class="hero__intro-block">
+    <h1 class="header__large-title header--intro">We're the Nashville chapter of the National Stuttering Association, meeting once a month to support each other and talk about stuttering.</h1>
+    <button class="btn btn--find-out-more">Find out more</button>
+  </div>
 </section>
 
 <section class="section section__blog wrapper">
@@ -22,8 +24,7 @@ get_header();
   </div>
   <div class="section__location--content">
     <h2 class="header__large-title header--blue">Where we meet</h2>
-    <p class="font__content">On the third Tuesday of each month, our chapter of the National Stuttering Association meets at Glen Leven Presbyterian Church off of Franklin Road in Nashville, TN. Meetings typically start at 6pm and end at around 8pm.</p>
-    <p class="font__content">For more information, click on the red marker inside the map.</p>
+    <p class="font__content--location">On the third Tuesday of each month, our chapter of the National Stuttering Association meets at Glen Leven Presbyterian Church off of Franklin Road in Nashville, TN. Meetings typically start at 6pm and end at around 8pm.</p>
   </div>
 </section>
 

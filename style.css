@@ -16,6 +16,8 @@ a {
 
 .font__content {
   line-height: 25px;
+  padding-right: 38rem;
+  text-align: justify;
 }
 
 .font__white-bg {
@@ -67,14 +69,10 @@ a {
 }
 
 .header--intro {
-  position: absolute;
-  top: 12rem;
   background: rgba(95,159,203,0.8);
-  margin: 0 1.8rem;
+  font-weight: 400;
   padding: 1rem 2rem;
   line-height: 1.8rem;
-  font-weight: 400;
-  text-align: center;
 }
 
 .header--blue {
@@ -82,6 +80,9 @@ a {
   font-weight: 300;
   border-bottom: 1px solid #0197F5;
   display: inline-block;
+  font-size: 2.3rem;
+  text-transform: lowercase;
+  padding-bottom: 0.3rem;
 }
 
 /* Remember mobile-first! */
@@ -94,6 +95,42 @@ a {
   height: 600px;
 }
 
+.hero__intro-block {
+  margin: 0 1.8rem;
+  padding-top: 4rem;
+  text-align: center;/*1290px move left*/
+}
+
+@media (min-width: 530px) {}
+
+@media (min-width: 800px) {
+
+  .hero__intro-block {
+    width: 40%;
+    margin-left: 26rem;
+    padding-top: 7rem;
+  }
+}
+
+@media (min-width: 1010px) {
+
+  .hero__intro-block {
+    width: 40%;
+    margin-left: 26rem;
+    padding-top: 10rem;/*margin-left: 38rem;
+      margin-right: 23rem;
+      padding-top: 9rem;*/
+  }
+}
+
+@media (min-width: 1110px) {
+
+  .hero__intro-block {
+    width: 35%;
+    margin-left: 37rem;
+  }
+}
+
 .btn {
   background-color: #0197F5;
   border: none;
@@ -102,10 +139,9 @@ a {
 }
 
 .btn--find-out-more {
-  position: absolute;
-  top: 26rem;
-  margin-left: 8.5rem;
   background-color: #57CD79;
+  margin-top: 0.8rem;
+  width: 100%;
 }
 
 .section {
@@ -120,11 +156,11 @@ a {
   }
 }
 
-@media (min-width: 800px) {
-
-  .section__location--content {
-    padding-left: 5rem;
-  }
+.section__location--content {
+  clear: left;
+  display: inline;/*@mixin mediumScreen{
+      padding-left: 5rem;
+    }*/
 }
 
 .section__footer {

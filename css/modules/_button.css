@@ -5,9 +5,8 @@
   padding: 0.6rem;
 
   &--find-out-more {
-    position: absolute;
-    top: 26rem;
-    margin-left: 8.5rem;
     background-color: #57CD79;
+    margin-top: 0.8rem;
+    width: 100%;
   }
 }
