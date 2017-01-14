@@ -10,7 +10,7 @@ Version: 1.0
 }
 
 a {
-  color: white;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -104,11 +104,20 @@ a {
   margin: 2rem 1.5rem;
 }
 
-.section__full-screen-width {
-  width: 650px;
+@media (min-width: 800px) {
+
+  .section__screen-width {
+    width: 650px;
+  }
+}
+
+.section__footer {
+  color: #ffffff;
+  margin: 0;
+  padding: 2rem 1.5rem;
+  background-color: #0197F5;
 }
 
 #wpgmza_map {
   margin-bottom: 1rem;
-  width: 100%;
 }

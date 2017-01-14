@@ -9,13 +9,13 @@ get_header();
   <button class="btn btn--find-out-more">Find out more</button>
 </section>
 
-<section id="blog" class="section">
+<section class="section section__blog">
   <h2 class="header__large-title header--blue">Catch up with our blog →</h2>
   <p class="font__content">Beyond our regular monthly meetings, our members make posts about their experiences with stuttering. Whether they themselves stutter, or they are or have been a SLP (speech-language pathologist), each person has had personal/professional experience with stuttering and offer unique insights of it. Feel free to read a few posts, comment on some, or submit your own!</p>
 </section>
 
-<section class="location section">
-  <div class="section__full-screen-width">
+<section class="section section__location">
+  <div class="section__screen-width">
     <?php while ( have_posts() ): the_post(); ?>
         <?php the_content(); ?>
     <?php endwhile; ?>
@@ -23,6 +23,23 @@ get_header();
   <h2 class="header__large-title header--blue">Where we meet</h2>
   <p class="font__content">On the third Tuesday of each month, our chapter of the National Stuttering Association meets at Glen Leven Presbyterian Church off of Franklin Road in Nashville, TN. Meetings typically start at 6pm and end at around 8pm.</p>
   <p class="font__content">For more information, click on the red marker inside the map.</p>
+</section>
+
+<section class="section section__footer">
+  <div class="links__more-info">
+    <h2>For more information:</h2>
+    <ul>
+      <li>
+        <a href="http://westutter.org" target="_blank">National Stuttering Association</a>
+      </li>
+      <li>
+        <a href="http://stutteringhelp.org" target="_blank">The Stuttering Foundation</a>
+      </li>
+      <li>
+        <a href="https://vanderbilthealth.com/billwilkerson/30037" target="_blank">Vanderbilt Bill Wilkerson Center</a>
+      </li>
+    </ul>
+  </div>
 </section>
 
 <?php get_footer(); ?>
