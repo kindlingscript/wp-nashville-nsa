@@ -18,10 +18,16 @@ a {
   .font__content--location {
   line-height: 25px;
   text-align: justify;
+  font-size: 1.1rem;
+  font-weight: 300;
 }
 
-.font__content {
-  padding-right: 38rem;
+@media (min-width: 800px) {
+
+  .font__content,
+  .font__content--location {
+    padding-right: 6rem;
+  }
 }
 
 .font__white-bg {
@@ -84,9 +90,16 @@ a {
   font-weight: 300;
   border-bottom: 1px solid #0197F5;
   display: inline-block;
-  font-size: 2.3rem;
+  font-size: 1.8rem;
   text-transform: lowercase;
   padding-bottom: 0.3rem;
+}
+
+@media (min-width: 800px) {
+
+  .header--blue {
+    font-size: 2.3rem;
+  }
 }
 
 /* Remember mobile-first! */
@@ -153,16 +166,15 @@ a {
 
 @media (min-width: 800px) {
 
-  .section__screen-width {
-    width: 650px;
+  .section {
+    margin: 6rem auto;
   }
 }
 
 @media (min-width: 800px) {
 
-  .section__location--content {
-    margin-left: 45rem;
-    margin-top: 5rem;
+  .section__screen-width {
+    width: 650px;
   }
 }
 
@@ -193,4 +205,22 @@ a {
 
 #wpgmza_map {
   margin-bottom: 1rem;
+}
+
+.grid::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media (min-width: 800px) {
+
+  .grid--space {
+    padding-left: 5rem;
+  }
+
+  .grid__med-6 {
+    float: left;
+    width: 50%;
+  }
 }

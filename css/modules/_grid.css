@@ -1,0 +1,14 @@
+.grid {
+  @mixin clearfix;
+
+  @mixin mediumScreen {
+    &--space {
+      padding-left: 5rem;
+    }
+
+    &__med-6 {
+      float: left;
+      width: 50%;
+    }
+  }
+}

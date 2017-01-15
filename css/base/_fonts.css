@@ -3,10 +3,12 @@
   &__content--location {
     line-height: 25px;
     text-align: justify;
-  }
+    font-size: 1.1rem;
+    font-weight: 300;
 
-  &__content {
-    padding-right: 38rem;
+    @mixin mediumScreen {
+      padding-right: 6rem;
+    }
   }
 
   &__white-bg {
