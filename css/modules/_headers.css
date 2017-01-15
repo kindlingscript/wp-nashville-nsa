@@ -41,10 +41,6 @@
     padding-top: 4rem;
     text-align: center;
 
-    @mixin smallScreen {
-
-    }
-
     @mixin mediumScreen {
       width: 40%;
       margin-left: 26rem;

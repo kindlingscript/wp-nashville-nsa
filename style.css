@@ -14,10 +14,14 @@ a {
   text-decoration: none;
 }
 
-.font__content {
+.font__content,
+  .font__content--location {
   line-height: 25px;
-  padding-right: 38rem;
   text-align: justify;
+}
+
+.font__content {
+  padding-right: 38rem;
 }
 
 .font__white-bg {
@@ -101,8 +105,6 @@ a {
   text-align: center;/*1290px move left*/
 }
 
-@media (min-width: 530px) {}
-
 @media (min-width: 800px) {
 
   .hero__intro-block {
@@ -156,11 +158,12 @@ a {
   }
 }
 
-.section__location--content {
-  clear: left;
-  display: inline;/*@mixin mediumScreen{
-      padding-left: 5rem;
-    }*/
+@media (min-width: 800px) {
+
+  .section__location--content {
+    margin-left: 45rem;
+    margin-top: 5rem;
+  }
 }
 
 .section__footer {

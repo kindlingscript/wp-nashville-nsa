@@ -9,12 +9,10 @@
   }
 
   &__location--content {
-    clear: left;
-    display: inline;
-
-    /*@mixin mediumScreen{
-      padding-left: 5rem;
-    }*/
+    @mixin mediumScreen{
+      margin-left: 45rem;
+      margin-top: 5rem;
+    }
   }
 
   &__footer {

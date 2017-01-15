@@ -1,8 +1,12 @@
 .font {
-  &__content {
+  &__content,
+  &__content--location {
     line-height: 25px;
-    padding-right: 38rem;
     text-align: justify;
+  }
+
+  &__content {
+    padding-right: 38rem;
   }
 
   &__white-bg {
