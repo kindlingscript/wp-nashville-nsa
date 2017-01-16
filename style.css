@@ -190,6 +190,12 @@ a {
   text-align: center;
 }
 
+.section__footer a:hover {
+  border-bottom: 1px solid #ffffff;
+  color: #d0f0ff;
+  padding-bottom: 0.2rem;
+}
+
 .section__footer ul {
   padding: 0;
 }
@@ -208,12 +214,6 @@ a {
   }
 }
 
-.section__footer li a:hover {
-  border-bottom: 1px solid #ffffff;
-  color: #d0f0ff;
-  padding-bottom: 0.2rem;
-}
-
 .section__footer .motto {
   padding-top: 1.3rem;
 }
@@ -229,6 +229,31 @@ a {
 .section__footer .motto p {
   font-size: 0.9rem;
   font-style: italic;
+}
+
+.section__footer .social {
+  padding-top: 2.5rem;
+}
+
+@media (min-width: 800px) {
+
+  .section__footer .social {
+    padding-top: 0;
+  }
+}
+
+.section__footer .copyright {
+  clear: both;
+  padding: 2rem 0 1rem 0;
+  font-weight: 100;
+  font-size: 0.875rem;
+}
+
+@media (min-width: 800px) {
+
+  .section__footer .copyright {
+    padding-left: 4.1rem;
+  }
 }
 
 #wpgmza_map {

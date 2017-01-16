@@ -19,6 +19,12 @@
     background-color: $mainBlue;
     text-align: center;
 
+    a:hover {
+      border-bottom: 1px solid $white;
+      color: #d0f0ff;
+      padding-bottom: 0.2rem;
+    }
+
     ul {
       padding: 0;
     }
@@ -31,12 +37,6 @@
 
       @mixin mediumScreen {
         display: block;
-      }
-
-      a:hover {
-        border-bottom: 1px solid $white;
-        color: #d0f0ff;
-        padding-bottom: 0.2rem;
       }
     }
 
@@ -54,6 +54,25 @@
       p {
         font-size: 0.9rem;
         font-style: italic;
+      }
+    }
+
+    .social {
+      padding-top: 2.5rem;
+
+      @mixin mediumScreen {
+        padding-top: 0;
+      }
+    }
+
+    .copyright {
+      clear: both;
+      padding: 2rem 0 1rem 0;
+      font-weight: 100;
+      font-size: 0.875rem;
+
+      @mixin mediumScreen {
+        padding-left: 4.1rem;
       }
     }
   }

@@ -54,7 +54,7 @@ get_header();
       <h2 class="font__white-bg font--social">Find us elsewhere:</h2>
       <i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i>
     </div>
-    <div class="copyright grid__med-6">
+    <div class="copyright">
       <a href="http://kindlingscript.com">© 2017 kindlingscript</a>
     </div>
   </div>
