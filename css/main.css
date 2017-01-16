@@ -7,8 +7,8 @@ Version: 1.0
 
 @import "base/_variables";
 @import "base/_global";
-@import "base/_fonts.css";
 @import "base/_mixins.css";
+@import "base/_fonts.css";
 @import "modules/_wrapper.css";
 @import "modules/_navbar.css";
 @import "modules/_headers.css";

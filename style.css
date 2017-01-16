@@ -38,6 +38,10 @@ a {
   font-weight: 400;
 }
 
+.font--social {
+  margin-bottom: 1.5rem;
+}
+
 .wrapper {
   padding-left: 18px;
   padding-right: 18px;
@@ -181,7 +185,7 @@ a {
 .section__footer {
   color: #ffffff;
   margin: 0;
-  padding: 2rem 1.5rem;
+  padding: 3rem 1.5rem 2rem 1.5rem;
   background-color: #0197F5;
   text-align: center;
 }
@@ -197,10 +201,34 @@ a {
   font-weight: 100;
 }
 
+@media (min-width: 800px) {
+
+  .section__footer li {
+    display: block;
+  }
+}
+
 .section__footer li a:hover {
   border-bottom: 1px solid #ffffff;
   color: #d0f0ff;
   padding-bottom: 0.2rem;
+}
+
+.section__footer .motto {
+  padding-top: 1.3rem;
+}
+
+.section__footer .motto h3, .section__footer .motto p {
+  font-weight: 100;
+}
+
+.section__footer .motto h3 {
+  font-size: 1.375rem;
+}
+
+.section__footer .motto p {
+  font-size: 0.9rem;
+  font-style: italic;
 }
 
 #wpgmza_map {
@@ -210,13 +238,17 @@ a {
 .grid::after {
   content: "";
   clear: both;
-  display: table;
 }
 
 @media (min-width: 800px) {
 
   .grid--space {
     padding-left: 5rem;
+  }
+
+  .grid__med-4 {
+    float: left;
+    width: 33.3%;
   }
 
   .grid__med-6 {

@@ -31,19 +31,32 @@ get_header();
 </section>
 
 <section class="section section__footer">
-  <div class="links__more-info wrapper">
-    <h2 class="font__white-bg">For more information:</h2>
-    <ul>
-      <li>
-        <a href="http://westutter.org" target="_blank">National Stuttering Association</a>
-      </li>
-      <li>
-        <a href="http://stutteringhelp.org" target="_blank">The Stuttering Foundation</a>
-      </li>
-      <li>
-        <a href="https://vanderbilthealth.com/billwilkerson/30037" target="_blank">Vanderbilt Bill Wilkerson Center</a>
-      </li>
-    </ul>
+  <div class="wrapper">
+    <div class="links__more-info grid__med-4">
+      <h2 class="font__white-bg">For more information:</h2>
+      <ul>
+        <li>
+          <a href="http://westutter.org" target="_blank">National Stuttering Association</a>
+        </li>
+        <li>
+          <a href="http://stutteringhelp.org" target="_blank">The Stuttering Foundation</a>
+        </li>
+        <li>
+          <a href="https://vanderbilthealth.com/billwilkerson/30037" target="_blank">Vanderbilt Bill Wilkerson Center</a>
+        </li>
+      </ul>
+    </div>
+    <div class="motto grid__med-4 grid--space">
+      <h3>"If you stutter, you're not alone."</h3>
+      <p>National Stuttering Association motto</p>
+    </div>
+    <div class="social grid__med-4 grid--space">
+      <h2 class="font__white-bg font--social">Find us elsewhere:</h2>
+      <i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i>
+    </div>
+    <div class="copyright grid__med-6">
+      <a href="http://kindlingscript.com">© 2017 kindlingscript</a>
+    </div>
   </div>
 </section>
 
