@@ -5,6 +5,13 @@
 get_header();
 ?>
 
-<h1>Welcome to the Nashville NSA blog!</h1>
+<section class="blog wrapper">
+  <?php if ( have_posts() ): ?>
+    <?php while ( have_posts() ) : the_post(); ?>
+      <?php get_template_part('content-blog', get_post_format()); ?>
+    <?php endwhile;  else : ?>
+  	<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+  <?php endif; ?>
+</section>
 
 <?php get_footer(); ?>

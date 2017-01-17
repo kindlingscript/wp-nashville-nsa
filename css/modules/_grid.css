@@ -15,5 +15,10 @@
       float: left;
       width: 50%;
     }
+
+    &__med-8 {
+      float: left;
+      width: 66.67%;
+    }
   }
 }

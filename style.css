@@ -280,4 +280,28 @@ a {
     float: left;
     width: 50%;
   }
+
+  .grid__med-8 {
+    float: left;
+    width: 66.67%;
+  }
+}
+
+.blog {
+  margin-top: 2rem;
+}
+
+.entry-title a {
+  color: black;
+  display: inline-block;
+  border-bottom: 1px solid transparent;
+}
+
+.entry-title a:hover {
+  color: #0197F5;
+  border-bottom: 1px solid #0197F5;
+}
+
+.entry-terms a {
+  color: black;
 }
