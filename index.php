@@ -12,6 +12,14 @@ get_header();
     <?php endwhile;  else : ?>
   	<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
   <?php endif; ?>
+
+  <div class="sidebar">
+    <?php if ( is_active_sidebar( 'blog-sidebar' ) ) : ?>
+  	<div id="blog-sidebar" class="blog-sidebar widget-area" role="complementary">
+  		<?php dynamic_sidebar( 'blog-sidebar' ); ?>
+  	</div>
+  	<?php endif; ?>
+  </div>
 </section>
 
 <?php get_footer(); ?>

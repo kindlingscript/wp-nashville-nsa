@@ -14,16 +14,25 @@
         <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
       </h1>
 		</header>
+		<div class="entry-author">
+			by <span class="entry-author--italic"><?php the_author(); ?></span>
+		</div>
 		<div class="entry-summary">
 			<?php the_excerpt(); ?>
-      <a href="<?php the_permalink(); ?>">Read more</a>
+			<div class="entry-summary--read-more">
+				<a href="<?php the_permalink(); ?>" class="btn">Read more</a>
+			</div>
 		</div>
 		<footer class="entry-footer">
+			<div class="divider"></div>
 			<div class="entry-meta">
-				<span class="entry-terms comments author">
-					Written by <?php the_author(); ?> /
-					Posted in <?php the_category(', '); ?> /
-					<?php comments_number('No comments', '1 comment', '% comments'); ?>
+				<span class="entry-terms--small entry-terms comments author">
+					<div>
+						Posted in <span class="entry-terms--bolded"><?php the_category(', '); ?></span>
+					</div>
+					<div>
+						<span class="entry-terms--bolded"><?php comments_number('No comments', '1 comment', '% comments'); ?></span>
+					</div>
 				</span>
 			</div>
 		</footer>

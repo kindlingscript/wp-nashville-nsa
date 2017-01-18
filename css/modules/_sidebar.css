@@ -1,0 +1,7 @@
+.blog-sidebar {
+  margin-top: 4rem;
+
+  @mixin mediumScreen {
+    margin-top: 0;
+  }
+}
