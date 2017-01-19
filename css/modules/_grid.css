@@ -6,6 +6,11 @@
       padding-left: 5rem;
     }
 
+    &__med-3 {
+      float: left;
+      width: 25%;
+    }
+
     &__med-4 {
       float: left;
       width: 33.3%;
@@ -14,6 +19,11 @@
     &__med-6 {
       float: left;
       width: 50%;
+    }
+
+    &__med-7 {
+      float: left;
+      width: 58.33%;
     }
 
     &__med-8 {

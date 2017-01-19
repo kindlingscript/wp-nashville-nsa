@@ -5,7 +5,15 @@
     margin-top: 0;
   }
 
+  .widget {
+    padding-bottom: 1.5rem;
+  }
+
   #searchform {
+    .screen-reader-text {
+      display: none;
+    }
+
     #s {
       padding: 0.3rem
     }
@@ -16,5 +24,9 @@
       color: $white;
       padding: 0.4rem 1rem;
     }
+  }
+
+  .widget-title {
+    color: $mainBlue;
   }
 }

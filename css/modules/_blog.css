@@ -1,5 +1,9 @@
 .blog {
   margin-top: 2rem;
+
+  @mixin mediumScreen {
+    margin-top: 3.5rem;
+  }
 }
 
 .blog-entry {
@@ -84,5 +88,11 @@
     .comments {
       margin-top: 0.5rem;
     }
+  }
+
+  .divider-bottom {
+    border-bottom: 10px dashed $mainBlue;
+    width: 30%;
+    margin: 3rem auto;
   }
 }
