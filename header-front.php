@@ -9,15 +9,15 @@
 </head>
 <body>
   <header class="header">
-    <nav class="default-nav">
+    <nav class="front-nav">
       <div class="wrapper">
         <div class="left-header">
-          <a href=<?php echo esc_url( home_url() ); ?> class="header__site-title--default">
+          <a href=<?php echo esc_url( home_url() ); ?> class="header__site-title">
             <?php echo get_bloginfo( 'name' ); ?>
           </a>
         </div>
         <div class="right-header">
-          <button class="btn btn--white">Want to contribute?</button>
+          <button class="btn">Want to contribute?</button>
         </div>
       </div>
     </nav>

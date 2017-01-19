@@ -1,7 +1,11 @@
 <?php
 // Front/homepage template for site.
 
-get_header();
+if ( is_front_page() ) {
+  get_header( 'front' );
+} else {
+  get_header();
+}
 ?>
 
 <section class="hero">

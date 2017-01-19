@@ -11,6 +11,10 @@
 .entry-author,
 .entry-meta {
   text-align: center;
+
+  @mixin mediumScreen {
+    text-align: left;
+  }
 }
 
 .entry-time {
@@ -44,6 +48,10 @@
 .entry-summary {
   &--read-more {
     text-align: center;
+
+    @mixin mediumScreen {
+      text-align: left;
+    }
   }
 
   p {
@@ -59,6 +67,11 @@
   border-bottom: 1px solid $mainBlue;
   width: 50%;
   margin: 0 auto;
+
+  @mixin mediumScreen {
+    width: 33.3%;
+    margin: 0;
+  }
 }
 
 .entry-meta {
@@ -67,6 +80,9 @@
   .entry-terms {
     &--bolded {
       font-weight: 700;
+    }
+    .comments {
+      margin-top: 0.5rem;
     }
   }
 }

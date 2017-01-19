@@ -4,4 +4,17 @@
   @mixin mediumScreen {
     margin-top: 0;
   }
+
+  #searchform {
+    #s {
+      padding: 0.3rem
+    }
+
+    #searchsubmit {
+      background-color: $mainBlue;
+      border: none;
+      color: $white;
+      padding: 0.4rem 1rem;
+    }
+  }
 }

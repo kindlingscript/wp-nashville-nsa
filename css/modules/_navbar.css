@@ -1,7 +1,12 @@
-.primary-nav {
+.default-nav {
   height: 6.25rem;
-  background-color: $white;
+  background-color: $mainBlue;
   border-bottom: 1px solid $mainBlue;
+}
+
+.front-nav {
+  background-color: $white;
+  height: 6.25rem;
 }
 
 .left-header {

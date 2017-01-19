@@ -2,7 +2,11 @@
 // The "fallback" file for all pages.
 // End usage = display blog.
 
-get_header();
+if ( is_front_page() ) {
+  get_header( 'front' );
+} else {
+  get_header();
+}
 ?>
 
 <section class="blog wrapper">
@@ -13,7 +17,7 @@ get_header();
   	<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
   <?php endif; ?>
 
-  <div class="sidebar">
+  <div class="sidebar grid__med-4">
     <?php if ( is_active_sidebar( 'blog-sidebar' ) ) : ?>
   	<div id="blog-sidebar" class="blog-sidebar widget-area" role="complementary">
   		<?php dynamic_sidebar( 'blog-sidebar' ); ?>

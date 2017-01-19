@@ -4,6 +4,10 @@
     color: $mainBlue;
   }
 
+  &__site-title--default {
+    color: $white;
+  }
+
   &__large-title {
     margin: 0;
     color: $white;

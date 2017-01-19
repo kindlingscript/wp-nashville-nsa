@@ -30,7 +30,7 @@
 					<div>
 						Posted in <span class="entry-terms--bolded"><?php the_category(', '); ?></span>
 					</div>
-					<div>
+					<div class="comments">
 						<span class="entry-terms--bolded"><?php comments_number('No comments', '1 comment', '% comments'); ?></span>
 					</div>
 				</span>
