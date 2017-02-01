@@ -12,6 +12,16 @@
     }
   }
 
+  &__blog {
+    &--caption {
+      text-align: center;
+      font-size: 0.9rem;
+      margin-top: 0.5rem;
+      color: #9b9b9b;
+      font-style: italic;
+    }
+  }
+
   &__footer {
     color: $white;
     margin: 0;
@@ -19,10 +29,19 @@
     background-color: $mainBlue;
     text-align: center;
 
+    a {
+      color: $white;
+    }
+
     a:hover {
       border-bottom: 1px solid $white;
       color: #d0f0ff;
       padding-bottom: 0.2rem;
+    }
+
+    .no-underline:hover {
+      border-bottom: none;
+      color: #d0f0ff;
     }
 
     ul {

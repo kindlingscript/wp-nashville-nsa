@@ -8,60 +8,77 @@ if ( is_front_page() ) {
 }
 ?>
 
-<section class="hero">
-  <div class="hero__intro-block">
-    <h1 class="header__large-title header--intro">We're the Nashville chapter of the National Stuttering Association, meeting once a month to support each other and talk about stuttering.</h1>
-    <button class="btn btn--find-out-more">Find out more</button>
-  </div>
-</section>
+<?php while ( have_posts() ) : the_post(); 
+  $welcome_message = get_field('welcome_message');
+  $blog_link_description = get_field('blog_link_description');
+  $picture = get_field('picture');
+  $img_size = "large";
+  $meeting_place_description = get_field('meeting_place_description');
+?>
 
-<section class="section section__blog wrapper">
-  <div class="grid__med-6">
-    <h2 class="header__large-title header--blue">Catch up with our blog →</h2>
-    <p class="font__content">Beyond our regular monthly meetings, our members make posts about their experiences with stuttering. Whether they themselves stutter, or they are or have been a SLP (speech-language pathologist), each person has had personal/professional experience with stuttering and offer unique insights of it. Feel free to read a few posts, comment on some, or submit your own!</p>
-  </div>
-</section>
+  <section class="hero">
+    <div class="hero__intro-block">
+      <h1 class="header__large-title header--intro"><?php echo $welcome_message; ?></h1>
+      <button class="btn btn--find-out-more">Find out more</button>
+    </div>
+  </section>
 
-<section class="section section__location wrapper">
-  <div class="section__screen-width grid__med-6">
-    <?php while ( have_posts() ): the_post(); ?>
-        <?php the_content(); ?>
-    <?php endwhile; ?>
-  </div>
-  <div class="section__location--content grid__med-6 grid--space">
-    <h2 class="header__large-title header--blue">Where we meet</h2>
-    <p class="font__content--location">On the third Tuesday of each month, our chapter of the National Stuttering Association meets at Glen Leven Presbyterian Church off of Franklin Road in Nashville, TN. Meetings typically start at 6pm and end at around 8pm.</p>
-  </div>
-</section>
+  <section class="section section__blog wrapper">
+    <div class="grid__med-6">
+      <h2 class="header__large-title header--blue"><a href="#">Catch up with our blog →</a></h2>
+      <p class="font__content--blog"><?php echo $blog_link_description; ?></p>
+    </div>
+    <div class="grid__med-6 grid--space">
+      <?php if ($picture) {
+        echo wp_get_attachment_image( $picture, $img_size );
+        echo '<p class="section__blog--caption">' . get_the_excerpt(get_field('picture')) . '</p>';
+      } ?>
+    </div>
+  </section>
 
-<section class="section section__footer">
-  <div class="wrapper">
-    <div class="links__more-info grid__med-4">
-      <h2 class="font__white-bg">For more information:</h2>
-      <ul>
-        <li>
-          <a href="http://westutter.org" target="_blank">National Stuttering Association</a>
-        </li>
-        <li>
-          <a href="http://stutteringhelp.org" target="_blank">The Stuttering Foundation</a>
-        </li>
-        <li>
-          <a href="https://vanderbilthealth.com/billwilkerson/30037" target="_blank">Vanderbilt Bill Wilkerson Center</a>
-        </li>
-      </ul>
+  <section class="section section__location wrapper">
+    <div class="section__screen-width grid__med-6">
+      <!-- Google map is here -->
+      <?php the_content(); ?>
     </div>
-    <div class="motto grid__med-4 grid--space">
-      <h3>"If you stutter, you're not alone."</h3>
-      <p>National Stuttering Association motto</p>
+    <div class="section__location--content grid__med-6 grid--space">
+      <h2 class="header__large-title header--blue">Where we meet</h2>
+      <p class="font__content--location"><?php echo $meeting_place_description; ?></p>
     </div>
-    <div class="social grid__med-4 grid--space">
-      <h2 class="font__white-bg font--social">Find us elsewhere:</h2>
-      <i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i>
+  </section>
+
+  <section class="section section__footer">
+    <div class="wrapper">
+      <div class="links__more-info grid__med-4">
+        <h2 class="font__white-bg">For more information:</h2>
+        <ul>
+          <li>
+            <a href="http://westutter.org" target="_blank">National Stuttering Association</a>
+          </li>
+          <li>
+            <a href="http://stutteringhelp.org" target="_blank">The Stuttering Foundation</a>
+          </li>
+          <li>
+            <a href="https://vanderbilthealth.com/billwilkerson/30037" target="_blank">Vanderbilt Bill Wilkerson Center</a>
+          </li>
+        </ul>
+      </div>
+      <div class="motto grid__med-4 grid--space">
+        <h3>"If you stutter, you're not alone."</h3>
+        <p>National Stuttering Association motto</p>
+      </div>
+      <div class="social grid__med-4 grid--space">
+        <h2 class="font__white-bg font--social">Find us elsewhere:</h2>
+        <a href="https://www.facebook.com/groups/185080364866448" target="_blank" class="no-underline">
+          <i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i>
+        </a>
+      </div>
+      <div class="copyright">
+        <a href="http://kindlingscript.com">© 2017 kindlingscript</a>
+      </div>
     </div>
-    <div class="copyright">
-      <a href="http://kindlingscript.com">© 2017 kindlingscript</a>
-    </div>
-  </div>
-</section>
+  </section>
+
+<?php endwhile; // end of the loop. ?>
 
 <?php get_footer(); ?>

@@ -14,17 +14,16 @@ a {
   text-decoration: none;
 }
 
-.font__content,
+.font__content--blog,
   .font__content--location {
-  line-height: 25px;
-  text-align: justify;
-  font-size: 1.1rem;
+  line-height: 1.7;
+  font-size: 1.15rem;
   font-weight: 300;
 }
 
 @media (min-width: 800px) {
 
-  .font__content,
+  .font__content--blog,
   .font__content--location {
     padding-right: 6rem;
   }
@@ -108,6 +107,10 @@ a {
   padding-bottom: 0.3rem;
 }
 
+.header--blue a {
+  color: #0197F5;
+}
+
 @media (min-width: 800px) {
 
   .header--blue {
@@ -122,7 +125,14 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 20%;
-  height: 600px;
+  height: 550px;
+}
+
+@media (min-width: 530px) {
+
+  .hero {
+    height: 700px;
+  }
 }
 
 .hero__intro-block {
@@ -196,6 +206,14 @@ a {
   }
 }
 
+.section__blog--caption {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  color: #9b9b9b;
+  font-style: italic;
+}
+
 .section__footer {
   color: #fff;
   margin: 0;
@@ -204,10 +222,19 @@ a {
   text-align: center;
 }
 
+.section__footer a {
+  color: #fff;
+}
+
 .section__footer a:hover {
   border-bottom: 1px solid #fff;
   color: #d0f0ff;
   padding-bottom: 0.2rem;
+}
+
+.section__footer .no-underline:hover {
+  border-bottom: none;
+  color: #d0f0ff;
 }
 
 .section__footer ul {

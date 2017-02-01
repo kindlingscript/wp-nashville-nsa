@@ -1,9 +1,8 @@
 .font {
-  &__content,
+  &__content--blog,
   &__content--location {
-    line-height: 25px;
-    text-align: justify;
-    font-size: 1.1rem;
+    line-height: 1.7;
+    font-size: 1.15rem;
     font-weight: 300;
 
     @mixin mediumScreen {
