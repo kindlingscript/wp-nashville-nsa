@@ -61,18 +61,24 @@ a {
   height: 6.25rem;
 }
 
-.left-header {
+.left-header,
+.center-header {
   display: inline-block;
   padding-top: 2rem;
 }
 
-.left-header a {
+.left-header a, .center-header a {
+  color: #fff;
   font-size: 1.7rem;
 }
 
 .right-header {
   float: right;
   padding-top: 1.8rem;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .header__site-title,
@@ -479,4 +485,48 @@ a {
 
 .blog-sidebar .widget-title {
   color: #0197F5;
+}
+
+.nf-form-title,
+.nf-form-fields-required {
+	display: none;
+}
+
+.nf-form-cont {
+	margin-top:3rem;
+}
+
+#nf-field-1-container,
+#nf-field-2-container,
+#nf-field-5-container {
+	width: 48%;
+}
+
+#nf-field-1-container {
+	float: left;
+}
+
+#nf-field-2-container {
+	float: right;
+	clear: initial;
+}
+
+.ninja-forms-field {
+	padding: 0.5rem;
+}
+
+.page {
+	padding-top: 1.5rem;
+	font-size: 1.1rem;
+}
+
+@media (min-width: 530px) {
+
+  .page {
+    padding: 2rem 17rem;
+  }
+
+  .page p {
+    font-size: 1.2rem;
+  }
 }

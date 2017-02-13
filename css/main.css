@@ -17,3 +17,5 @@ Version: 1.0
 @import "modules/_grid.css";
 @import "modules/_blog.css";
 @import "modules/_sidebar.css";
+@import "modules/_form.css";
+@import "modules/_page.css";

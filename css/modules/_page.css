@@ -1,0 +1,12 @@
+.page {
+	padding-top: 1.5rem;
+	font-size: 1.1rem;
+
+	@mixin smallScreen {
+		 padding: 2rem 17rem;
+
+	  p {
+	  	font-size: 1.2rem;
+	  }
+	}
+}

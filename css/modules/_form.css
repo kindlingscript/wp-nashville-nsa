@@ -1,0 +1,27 @@
+.nf-form-title,
+.nf-form-fields-required {
+	display: none;
+}
+
+.nf-form-cont {
+	margin-top:3rem;
+}
+
+#nf-field-1-container,
+#nf-field-2-container,
+#nf-field-5-container {
+	width: 48%;
+}
+
+#nf-field-1-container {
+	float: left;
+}
+
+#nf-field-2-container {
+	float: right;
+	clear: initial;
+}
+
+.ninja-forms-field {
+	padding: 0.5rem;
+}
