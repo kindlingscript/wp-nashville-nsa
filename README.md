@@ -7,4 +7,4 @@ After creating this site in Ruby on Rails, I decided after a couple of weeks tha
 
 To get this going on your computer and see the site, clone this repo into your own WordPress installation's theme folder (after the initial WordPress set-up), found under wp-content. Then, `npm install` in the command line, start up your local server (I use MAMP), and finally `gulp watch` if you'd like to test that out. If you do that last command, it should automatically open the current version of this site in your default browser, and also allow you to view it on your phone or other mobile devices with an external link.
 
-If this doesn't work, feel free to ping me on [Twitter](https://twitter.com/kindlingscript) and we can try to work through it together. :simple_smile:
+If this doesn't work, feel free to ping me on [Twitter](https://twitter.com/kindlingscript) and we can try to work through it together.
