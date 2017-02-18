@@ -68,7 +68,6 @@ a {
 }
 
 .left-header a, .center-header a {
-  color: #fff;
   font-size: 1.7rem;
 }
 
@@ -193,6 +192,10 @@ a {
   color: #0197F5;
 }
 
+.btn:hover {
+  cursor: pointer;
+}
+
 .section {
   margin: 2rem auto;
   clear: both;
@@ -218,6 +221,28 @@ a {
   margin-top: 0.5rem;
   color: #9b9b9b;
   font-style: italic;
+}
+
+.section__blog .small-screens {
+  text-align: center;
+}
+
+@media (min-width: 530px) {
+
+  .section__blog .small-screens {
+    display: none;
+  }
+}
+
+.section__blog .medium-up-screens {
+  display: none;
+}
+
+@media (min-width: 530px) {
+
+  .section__blog .medium-up-screens {
+    display: block;
+  }
 }
 
 .section__footer {
@@ -398,8 +423,16 @@ a {
   padding: 0.5rem 1rem;
 }
 
+.entry-author {
+  margin-bottom: 1.5rem;
+}
+
 .entry-author--italic {
   font-style: italic;
+}
+
+.entry-summary {
+  text-align: justify;
 }
 
 .entry-summary--read-more {
@@ -437,6 +470,11 @@ a {
 
 .entry-meta {
   padding-top: 1rem;
+  margin-bottom: 5rem;
+}
+
+.entry-meta__single {
+  margin-bottom: 2rem;
 }
 
 .entry-meta .entry-terms--bolded {
@@ -445,12 +483,6 @@ a {
 
 .entry-meta .entry-terms .comments {
   margin-top: 0.5rem;
-}
-
-.entry-meta .divider-bottom {
-  border-bottom: 10px dashed #0197F5;
-  width: 30%;
-  margin: 3rem auto;
 }
 
 .blog-sidebar {
@@ -529,4 +561,12 @@ a {
   .page p {
     font-size: 1.2rem;
   }
+}
+
+.single-post {
+	margin: 3rem 15rem;
+}
+
+.entry-summary p {
+	font-size: 1.15rem;
 }

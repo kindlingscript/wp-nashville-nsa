@@ -12,7 +12,8 @@ if ( is_front_page() ) {
   $welcome_message = get_field('welcome_message');
   $blog_link_description = get_field('blog_link_description');
   $picture = get_field('picture');
-  $img_size = "large";
+  $img_size = "medium";
+  $img_size_2 = "large";
   $meeting_place_description = get_field('meeting_place_description');
 ?>
 
@@ -25,12 +26,18 @@ if ( is_front_page() ) {
 
   <section class="section section__blog wrapper">
     <div class="grid__med-6">
-      <h2 class="header__large-title header--blue"><a href="#">Catch up with our blog →</a></h2>
+      <h2 class="header__large-title header--blue"><a href="<?php echo esc_url( home_url() ); ?>/blog">Catch up with our blog →</a></h2>
       <p class="font__content--blog"><?php echo $blog_link_description; ?></p>
     </div>
-    <div class="grid__med-6 grid--space">
+    <div class="small-screens">
       <?php if ($picture) {
         echo wp_get_attachment_image( $picture, $img_size );
+        echo '<p class="section__blog--caption">' . get_the_excerpt(get_field('picture')) . '</p>';
+      } ?>
+    </div>
+    <div class="grid__med-6 grid--space medium-up-screens">
+      <?php if ($picture) {
+        echo wp_get_attachment_image( $picture, $img_size_2 );
         echo '<p class="section__blog--caption">' . get_the_excerpt(get_field('picture')) . '</p>';
       } ?>
     </div>

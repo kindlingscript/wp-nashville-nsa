@@ -1,6 +1,6 @@
 <?php
 /*
- * This file contains the content for our posts.
+ * This file contains the content for our excerpted posts.
  */
 ?>
 
@@ -16,22 +16,24 @@
 	<div class="entry-author">
 		by <span class="entry-author--italic"><?php the_author(); ?></span>
 	</div>
-	<div class="featured-image">
-		<?php if ( has_post_thumbnail() ) {
-			the_post_thumbnail();
-		} ?> 
-	</div>
 	<div class="entry-summary">
-		<?php the_content(); ?>
+		<?php the_excerpt(); ?>
+		<div class="entry-summary--read-more">
+			<a href="<?php the_permalink(); ?>" class="btn">Read more</a>
+		</div>
 	</div>
 	<footer class="entry-footer">
 		<div class="divider"></div>
-		<div class="entry-meta entry-meta__single">
+		<div class="entry-meta">
 			<span class="entry-terms--small entry-terms comments author">
 				<div>
 					Posted in <span class="entry-terms--bolded"><?php the_category(', '); ?></span>
 				</div>
+				<div class="comments">
+					<span class="entry-terms--bolded"><?php comments_number('No comments', '1 comment', '% comments'); ?></span>
+				</div>
 			</span>
+			<div class="divider-bottom"></div>
 		</div>
 	</footer>
 </article>

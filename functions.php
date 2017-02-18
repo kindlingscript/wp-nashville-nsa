@@ -25,4 +25,8 @@ function nashvilleNSA_widgets_init() {
   ) );
 }
 add_action( 'widgets_init', 'nashvilleNSA_widgets_init' );
+
+
+// Add featured image support
+add_theme_support( 'post-thumbnails' ); 
 ?>

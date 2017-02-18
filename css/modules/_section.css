@@ -20,6 +20,22 @@
       color: #9b9b9b;
       font-style: italic;
     }
+
+    .small-screens {
+      text-align: center;
+
+      @mixin smallScreen {
+        display: none;
+      }
+    }
+
+    .medium-up-screens {
+      display: none;
+
+      @mixin smallScreen {
+        display: block;
+      }
+    }
   }
 
   &__footer {

@@ -12,7 +12,7 @@
     <nav class="default-nav">
       <div class="wrapper text-center">
         <div class="center-header">
-          <a href=<?php echo esc_url( home_url() ); ?> class="header__site-title">
+          <a href=<?php echo esc_url( home_url() ); ?> class="header__site-title--default">
             <?php echo get_bloginfo( 'name' ); ?>
           </a>
         </div>

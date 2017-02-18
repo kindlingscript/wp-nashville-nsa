@@ -14,4 +14,8 @@
     background-color: $white;
     color: $mainBlue;
   }
+
+  &:hover {
+    cursor: pointer;
+  }
 }

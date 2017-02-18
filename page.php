@@ -1,6 +1,5 @@
 <?php
-// The "fallback" file for all pages.
-// End usage = display blog.
+// Display contributing/about page.
 
 
 get_header( 'contributing' );

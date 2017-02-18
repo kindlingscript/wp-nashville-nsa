@@ -17,7 +17,9 @@
           </a>
         </div>
         <div class="right-header">
-          <button class="btn btn--white">Want to contribute?</button>
+          <a href="<?php echo esc_url( home_url() ); ?>/contributing">
+            <button class="btn btn--white">Want to contribute?</button>
+          </a>
         </div>
       </div>
     </nav>

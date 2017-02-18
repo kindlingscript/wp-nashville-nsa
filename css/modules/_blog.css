@@ -43,6 +43,7 @@
 }
 
 .entry-author {
+  margin-bottom: 1.5rem;
 
   &--italic {
     font-style: italic;
@@ -50,6 +51,8 @@
 }
 
 .entry-summary {
+  text-align: justify;
+
   &--read-more {
     text-align: center;
 
@@ -80,6 +83,11 @@
 
 .entry-meta {
   padding-top: 1rem;
+  margin-bottom: 5rem;
+
+  &__single {
+    margin-bottom: 2rem;
+  }
 
   .entry-terms {
     &--bolded {
@@ -88,11 +96,5 @@
     .comments {
       margin-top: 0.5rem;
     }
-  }
-
-  .divider-bottom {
-    border-bottom: 10px dashed $mainBlue;
-    width: 30%;
-    margin: 3rem auto;
   }
 }

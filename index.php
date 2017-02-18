@@ -13,7 +13,7 @@ if ( is_front_page() ) {
   <div class="grid__med-7">
     <?php if ( have_posts() ): ?>
       <?php while ( have_posts() ) : the_post(); ?>
-        <?php get_template_part('content-blog', get_post_format()); ?>
+        <?php get_template_part('content-excerpt', get_post_format()); ?>
       <?php endwhile;  else : ?>
     	<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
     <?php endif; ?>
